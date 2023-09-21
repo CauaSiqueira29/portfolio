@@ -1,4 +1,4 @@
-# Porfólio
+# Portfólio
 Meu primeiro portfólio feito em conjunto com o curso de HTML e CSS da alura!
 ![image](https://github.com/CauaSiCa29/porfolio/assets/105356310/fa006336-73f0-4fde-b49c-dd7dd8761152)
 
