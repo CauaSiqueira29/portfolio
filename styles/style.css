@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Rajdhani&display=swap');
+
+:root{
+    /*site em geral*/
+    --cor-primeiro-strong: rgb(24, 78, 214);
+    --cor-segundo-strong: rgb(24, 78, 164);
+    --cor-do-site: black;
+    --cor_da_fonte: aliceblue;
+
+    /*cabeçalho das páginas*/
+    --cor-da-fonte-cabecalho: rgb(0, 0, 0);
+    --cor-bg-cab: #13aaaa;
+
+    /*página home*/
+    --cor-titulo: rgb(5, 90, 135);
+    --cor-da-borda-meus-links: rgb(5, 90, 135);
+    --cor-da-fonte-meus-links: white;
+    --cor-do-hover: #1b1b1b;
+    --cor-da-borda-img: #19b699;
+
+    /*página about me*/
+    --cor-da-borda-img: #19b699;
+
+    /*página currículo*/
+    --cor-lista-titulos: #0775d6;
+    --cor-lista-inks: #00728e;
+    --cor-borda-img: #19b699;
+
+    /*rodapé das páginas*/
+    --cor-da-fonte-rodape: black;
+    --cor-do-bg-rodape: #13aaaa;
+
+    /*fontes*/
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Rajdhani', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Página inicial*/
+body{
+    /*height: 100vh; tirou pq tinha mais conteúdo doq o possível pro tamanho colocado*/
+    box-sizing: border-box;
+    background-color: var(--cor-do-site);
+    color: var(--cor_da_fonte);
+}
+
+.cabecalho{
+    padding: 2% 0% 1% 15%;
+    background-color: var(--cor-bg-cab);
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-da-fonte-cabecalho);
+    text-decoration: none;
+}
+
+/* main */
+.apresentacao{
+    padding: 5% 15%;/* primeiro é o vertical e dps o horizoltal*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* titulo da página */
+.nome{
+    color: var(--cor-titulo);
+}
+
+/* primeiro strong*/
+.s1{
+    color: var(--cor-primeiro-strong);
+}
+/* segundo strong*/
+.s2{
+    color: var(--cor-segundo-strong);
+}
+
+.apresentacao_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao_conteudo_paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+/* Parte dos links */
+.apresentacao_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao_links_titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+
+}
+
+.apresentacao_links_link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-da-borda-meus-links);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-da-fonte-meus-links);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links_link:hover{
+    background-color: var(--cor-do-hover);
+}
+
+.index_img{
+    width: 50%;
+    border: 5px inset var(--cor-da-borda-img);
+    border-radius: 8px;
+}
+
+.rodape{
+    padding: 15px;
+    color: var(--cor-da-fonte-rodape);
+    background-color: var(--cor-do-bg-rodape);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+}
+
+/*Página curriculo*/
+
+.curriculo{
+    padding: 5% 10%;
+    /*para os itens se alinharem na horizoltal, é chamado de row*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.curriculo_conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.curriculo_conteudo_paragrafo{
+    font-family: var(--fonte-secundaria);
+}
+
+.curriculo_conteudo_titulo{
+    font-family: var(--fonte-primaria);
+}
+
+.curriculo_conteudo_lista{
+    font-family: var(--fonte-secundaria);
+}
+
+.curriculo_conteudo_lista_segundotitulo{
+    margin: 10px;
+    font-size: 1.25rem;
+    color: var(--cor-lista-titulos);
+}
+
+.curriculo_conteudo_lista_link{
+    text-decoration: none;
+    color: var(--cor-lista-inks);
+}
+
+.curric_img{
+    border: 10px groove var(--cor-borda-img);
+    border-radius: 3%;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo{
+        /*Com o "widht: auto" eu to falando pra ele seguir o padrão do pai q é o ".apresentação"*/
+        width: auto;
+    }
+
+    .curriculo{
+        flex-direction: column-reverse;
+    }
+
+    .curriculo_conteudo{
+        font-size: 150%;
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Rajdhani&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+
+    --cor-bg-site: rgb(0, 107, 104);
+    --cor-da-fonte-cabecalho: rgb(0, 107, 104);
+    --cor-vermelho: rgb(138, 0, 0);
+    --cor-preto: black;
+    --cor-amarelo: yellow;
+    --cor-bg-cab: black;
+
+    --cor-da-borda-img: #19b699;
+
+    --cor-da-fonte-rodape: rgb(0, 107, 104);
+    --cor-do-bg-rodape: #000000;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Rajdhani', sans-serif;
+}
+
+body{
+    background-color: var(--cor-bg-site);
+}
+
+.cabecalho{
+    padding: 2% 0% 1% 15%;
+    background-color: var(--cor-bg-cab);
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-da-fonte-cabecalho);
+    text-decoration: none;
+}
+
+.aboutme_img{
+    border: 10px groove var(--cor-da-borda-img);
+    margin: 0%;
+}
+
+.link_img{
+    margin: auto;
+}
+
+.sobremim{
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.sobremim_titulo{
+    font-family: var(--fonte-primaria);
+}
+
+.sobremim_paragrafo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+.sobremim_paragrafo_s{
+    color: var(--cor-vermelho);
+}
+
+.sobremim_paragrafo_p{
+    color: var(--cor-preto)
+}
+
+.sobremim_paragrafo_o{
+    color: var(--cor-amarelo);
+}
+
+.sobremim_paragrafo_r{
+    color: var(--cor-vermelho);
+}
+
+.sobremim_paragrafo_t{
+    color: var(--cor-preto);
+}
+
+.rodape{
+    padding: 15px;
+    color: var(--cor-da-fonte-rodape);
+    background-color: var(--cor-do-bg-rodape);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 5%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .sobremim{
+        padding: 5%;
+    }
+
+    .sobremim_paragrafo{
+        font-size: 150%;
+    }
+
+}
