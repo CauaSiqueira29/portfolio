@@ -161,7 +161,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
 }
 
 .curriculo_conteudo{
@@ -224,5 +223,9 @@ body{
 
     .curriculo_conteudo{
         font-size: 150%;
+    }
+
+    .curric_img{
+        width: 100%;
     }
 }
